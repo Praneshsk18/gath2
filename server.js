@@ -110,7 +110,7 @@ const start = async () => {
     });
     await sequelize.authenticate();
     console.log("Database Connected");
-    await fastify.listen({ port: 3000 });
+    await fastify.listen({ port: 3000,"0.0.0.0" });
   } catch (e) {
     console.log(e);
   }
