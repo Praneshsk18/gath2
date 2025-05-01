@@ -17,7 +17,7 @@ const sequelize =new Sequelize(
 )
 
 const user = sequelize.define("user",{
-    id:{type:DataTypes.INTEGER,unique:true,primaryKey:true},
+    id:{type:DataTypes.INTEGER,unique:true,primaryKey:true,allowNull:true},
     article_no:{type:DataTypes.STRING(255),allowNull:false},
     product_service:{type:DataTypes.TEXT,allowNull:false},
     in_price:{type:DataTypes.INTEGER,allowNull:false},
